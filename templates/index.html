@@ -17,6 +17,29 @@
 
     </div>
 
+    <div class="input-form">
+        <form action="/events" method="post">
+            <label for="input-date">Date:</label>
+            <input type="text" id="input-date" name="date" required>
+
+            <label for="input-name">Name:</label>
+            <input type="text" id="input-name" name="name" required>
+            
+            <label for="input-description">Description</label>
+            <textarea name="description" id="input-description" cols="20" rows="5" required></textarea>
+            
+            <label for="input-room">Room:</label>
+            <input type="text" id="input-room" name="room" required>
+            
+            <label for="input-guests">Guests:</label>
+            <input type="number" id="input-guests" name="guests" required>
+            
+            <button>Add Event</button>
+
+        </form>
+
+    </div>
+
 {% endblock %}
 
 <!-- ADD FORM TO ADD EVENT TO LIST -->
