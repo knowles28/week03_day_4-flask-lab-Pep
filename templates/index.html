@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Events list!</h1>
+    <div class="wrapper">
+        <ul>
+            {% for event in events %}
+            <li>
+                <b>{{ event.date }}</b>
+                {{ event.name }}: {{ event.description }}
+                {{ event.room }}: {{ event.guests }} Guests
+
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+{% endblock %}
+
+<!-- ADD FORM TO ADD EVENT TO LIST -->
